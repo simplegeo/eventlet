@@ -1,0 +1,24 @@
+Source: eventlet
+Section: python
+Priority: extra
+Maintainer: SimpleGeo Nerds <nerds@simplegeo.com>
+Uploaders: Paul Lathrop <paul@simplegeo.com>
+Build-Depends: cdbs, debhelper (>= 7), python-support, python-setuptools, python-dev
+Standards-Version: 3.8.4
+Homepage: http://eventlet.net/
+
+Package: eventlet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Eventlet is a concurrent networking library for Python
+ Eventlet is a concurrent networking library for Python that allows you
+ to change how you run your code, not how you write it.
+ It uses epoll or libevent for highly scalable non-blocking I/O.
+ Coroutines ensure that the developer uses a blocking style of
+ programming that is similar to threading, but provide the benefits of
+ non-blocking I/O.  The event dispatch is implicit, which means you can
+ easily use Eventlet from the Python interpreter, or as a small part of
+ a larger application.  It's easy to get started using Eventlet, and
+ easy to convert existing applications to use it. Start off by looking
+ at examples, common design patterns, and the list of the basic API
+ primitives.
