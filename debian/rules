@@ -8,4 +8,4 @@ include /usr/share/cdbs/1/class/python-distutils.mk
 
 # Add here any variable or target overrides you need.
 build/eventlet::
-	python setup.py build test
+	python setup.py test
