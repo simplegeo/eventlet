@@ -31,12 +31,12 @@ class TestEchoPool(LimitedTestCase):
         finally:
             self.pool.put(proc)
 
-    @skip_on_windows    
+    @skip_on_windows
     def test_empty_echo(self):
         p = processes.Process('echo', ['-n'])
         self.assertEquals('', p.read())
         self.assertRaises(processes.DeadProcess, p.read)
-            
+
 
 class TestCatPool(LimitedTestCase):
     def setUp(self):
@@ -85,6 +85,8 @@ class TestCatPool(LimitedTestCase):
 
 
 class TestDyingProcessesLeavePool(LimitedTestCase):
+    TEST_TIMEOUT = 5
+
     def setUp(self):
         super(TestDyingProcessesLeavePool, self).setUp()
         self.pool = processes.ProcessPool('echo', ['hello'], max_size=1)
