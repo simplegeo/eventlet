@@ -4,6 +4,7 @@ MANIFEST.in
 NEWS
 README
 README.twisted
+setup.cfg
 setup.py
 doc/Makefile
 doc/authors.rst
