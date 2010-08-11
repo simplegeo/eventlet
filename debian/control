@@ -9,7 +9,7 @@ Homepage: http://eventlet.net/
 
 Package: eventlet
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, python, python-setuptools
 Description: Eventlet is a concurrent networking library for Python
  Eventlet is a concurrent networking library for Python that allows you
  to change how you run your code, not how you write it.
