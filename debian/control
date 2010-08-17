@@ -1,13 +1,13 @@
-Source: eventlet
+Source: python-eventlet
 Section: python
 Priority: extra
 Maintainer: SimpleGeo Nerds <nerds@simplegeo.com>
 Uploaders: Paul Lathrop <paul@simplegeo.com>
-Build-Depends: cdbs, debhelper (>= 7), python-support, python-setuptools, python-dev, python-nose, greenlet, python-openssl
+Build-Depends: cdbs, debhelper (>= 7), python-support, python-setuptools, python-dev, python-nose, python-greenlet, python-openssl
 Standards-Version: 3.8.4
 Homepage: http://eventlet.net/
 
-Package: eventlet
+Package: python-eventlet
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, python, python-setuptools
 Description: Eventlet is a concurrent networking library for Python
