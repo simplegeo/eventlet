@@ -1,4 +1,4 @@
-eventlet (0.9.10-1sg0) unstable; urgency=low
+python-eventlet (0.9.10-1sg0) unstable; urgency=low
 
   * Initial release
 
